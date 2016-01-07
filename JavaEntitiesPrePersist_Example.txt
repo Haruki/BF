@@ -1,0 +1,10 @@
+	@PrePersist
+	@Transient
+	void setDefaults() {
+		if (this.seenTime == null)
+			this.seenTime = (Date) EntityDefaultValues.Filmz.SEEN_TIME
+					.getDefault();
+		if (this.seen == null || this.seen.length() == 0)
+			this.seen = (String) EntityDefaultValues.Filmz.SEEN.getDefault();
+	}
+

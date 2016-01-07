@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BestFilmz"
+	xmlns:tns="http://borsutzky.info/BestFilmz" elementFormDefault="qualified">
+	<element name="movie">
+		<complexType>
+			<sequence>
+				<element name="nameDeutsch">
+					<simpleType>
+						<restriction base="string">
+							<maxLength value="255" />
+						</restriction>
+					</simpleType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
